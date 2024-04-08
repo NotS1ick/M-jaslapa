@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<!--Fix the restart button and complete the god damn sizing in style.css and the style_timer.css-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_timer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>PomoLaiks</title>
+</head>
+
+<body>
+    <header>
+        <button class="language" data-lang="en">EN</button>
+        <button class="language" data-lang="lv">LV</button>
+        <button class="language" data-lang="ru">RU</button>
+        <a href="/index.html" style="text-decoration: none;">
+            <h2 class="logo">Pomidoro</h2>
+        </a>
+        <nav class="navigation">
+            <a href="#section2">
+                <h3 data-translate="SMTH"></h3>
+            </a>
+        </nav>
+    </header>
+    <div class="centered-content">
+        <h1 data-translate="pmt" class="text"></h1>
+        <div class="timer-container">
+            <div class="timer">
+                <div id="timer">25:00</div>
+                <div class="buttons_time">
+                    <button id="start" class="icon-button"><i class="fas fa-play"></i></button>
+                    <button id="pause" class="icon-button" style="display: none;"><i class="fas fa-pause"></i></button>
+                    <button id="restart" class="icon-button"><i class="fas fa-redo"></i></button>
+                    <button id="settings" class="icon-button"><i class="fas fa-cog"></i></button>
+                </div>
+                <div id="settingsModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="options">
+                            Work Time (minutes): <input type="number" id="studyTime" min="0" value="25" max="59">
+                            Work Time (seconds): <input type="number" id="secondsTime" min="1" max="59" value="0">
+                            Break Time (minutes): <input type="number" id="breakTime" min="0" value="5" max="59">
+                            Break Time (seconds): <input type="number" id="secondsbreak" min="1" value="0" max="59">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursor-dot" data-cursor-dot></div>
+            <div class="cursor-outline" data-cursor-outline></div>
+
+            <script src="pomodoro.js"></script>
+</body>
+
+</html>
+
