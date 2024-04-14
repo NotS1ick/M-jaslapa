@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_timer.css" />
+  </head>
+  <body>
+    <body class="intro" id="top">
+      <div class="headerv2">
+          <div class="language-btn">
+              <div id="language-hide" id="language-btn">
+                  <a href="#" class="language" data-lang="en">EN</a>
+                  <a href="#" class="language" data-lang="lv">LV</a>
+                  <a href="#" class="language" data-lang="ru">RU</a>
+              </div>
+          </div>
+      </div>
+      <header>
+          <a href="/index.html" style="text-decoration: none;">
+              <h2 class="logo">Pomidoro</h2>
+          </a>
+      </header>
+    <main>
+    <div class="container">
+      <div id="settings-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">×</span>
+          <div class="input-container">
+            <label for="focus-time" data-translate="">Focus Time (minutes): </label>
+            <input type="number" id="focus-time" min="1" value="25"><br>
+            <label for="break-time">Break Time (minutes): </label>
+            <input type="number" id="break-time" min="1" value="5"><br>
+            <input type="number" id="longbreak-time" min="1" value="15"><br>
+            <button id="update-timer">Update Timer</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <button id="focus" class="btn btn-timer btn-focus" data-translate="Fcs"></button>
+        <button id="shortbreak" class="btn btn-shortbreak" data-translate="SB"></button>
+        <button id="longbreak" class="btn btn-longbreak" data-translate="LB"></button>
+      </div>
+      <div class="time-btn-container">
+        <span id="time"></span>
+        <div class="btn-container">
+          <button id="btn-start" class="show" data-translate="STRT"></button>
+          <button id="btn-pause" class="hide" data-translate="PSE">Pause</button>
+          <button id="btn-reset" class="hide">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </div>
+      <div id="cycle-count" data-translate="CCL"></div>
+      <button id="settings-btn"><i class="fa fa-cog"></i></button>
+    </div>
+  </main>
+
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+    <script src="pomodoro_.js"></script>
+  </body>
+</html>

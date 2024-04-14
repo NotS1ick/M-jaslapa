@@ -9,9 +9,7 @@
   background-color: #f8c2b6;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 * {
   margin: 0;
@@ -105,11 +103,19 @@ header {
   left: 0;
   width: 100%;
   padding: 30px 100px;
+  padding-top: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 100;
   animation: fade-down 1.3s;
+  margin-top: 30px
+}
+
+.headerv2 {
+  padding: 10px 10px;
+  animation: fade-down 1.3s;
+  background-color: #0e061d;
 }
 
 nav {
@@ -123,9 +129,14 @@ nav {
 
 .logo {
   transition: all 0.25s;
-  margin-right: 1000px;
   font-weight: 900;
 }
+
+.language-btn {
+  margin-left: 1800px;
+  z-index: 9999;
+}
+
 
 /* Start here tomorow (16/02/2024)*/
 
@@ -349,8 +360,9 @@ nav {
   padding: 5px 5px;
   text-decoration: none;
   color: #000;
-  background-color: #e858b6;
+  background-color: white;
   border-radius: 10px;
+  transition: all 0.25s;
 }
 
 .language:hover {
@@ -359,16 +371,162 @@ nav {
   transform: scale(1.16);
 }
 
+/* Footer */
+
+footer hr {
+  background-color: #c84eb7;
+  padding: 2px;
+  border: none;
+}
+
+.Sia {
+  color: white;
+  margin-top: 0.5vw;
+  margin-left: 2vw;
+  margin-bottom: 0.5vw;
+  display: flex;
+}
+
+.Sia h4 {
+  display: inline-block;
+  margin-right: 35vw;
+}
+
+.Kontakti {
+  margin-right: 2vw;
+  padding: 5px 5px;
+}
+
+.Kontakti a {
+  margin-right: 2vw;
+  padding: 5px 5px;
+  background-color: #f8c2b6;
+  border-radius: 10px;
+  transition: all 0.25s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.Kontakti a:hover {
+  transform: scale(1.16);
+  color: #fff;
+  background-color: #c84eb7;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #0e061d;
+  margin: 15% auto;
+  padding: 20px;
+  width: 20%;
+  height: 40%;
+  border-radius: 10px;
+  color: white;
+  transform: scale(0);
+  animation: fade-in 0.6s ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heroimg {
+  float: right;
+  margin-right: 5vw;
+  animation: fade-up 1.3s;
+  border-radius: 10px;
+}
+
+.heroimg-left {
+  float: left;
+  margin-left: 10vw;
+  animation: fade-up 1.3s;
+  border-radius: 10px;
+}
+
+.text-knt {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.persona {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1950px) {
+  .logo {
+    margin-right: 45vw;
+  }
+
+  .language-btn {
+    margin-left: 1800px;
+  }
+}
 
 @media only screen and (min-width: 1800px) {
   .logo {
-    margin-right: 45vw;
+    margin-right: 50vw;
   }
 }
 
 @media only screen and (max-width: 1800px) {
   .logo {
     margin-right: 40vw;
+  }
+
+  .language-btn {
+    margin-left: 1700px;
+  }
+
+  .headerv2 {
+    padding: 0vw 1vh;
   }
 }
 

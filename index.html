@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,16 @@
 </head>
 
 <body class="intro" id="top">
-    <header>
-        <div id="language-hide">
-            <a href="#" class="language" data-lang="en">EN</a>
-            <a href="#" class="language" data-lang="lv">LV</a>
-            <a href="#" class="language" data-lang="ru">RU</a>
+    <div class="headerv2">
+        <div class="language-btn">
+            <div id="language-hide" id="language-btn">
+                <a href="#" class="language" data-lang="en">EN</a>
+                <a href="#" class="language" data-lang="lv">LV</a>
+                <a href="#" class="language" data-lang="ru">RU</a>
+            </div>
         </div>
+    </div>
+    <header>
         <a>
             <h2 class="logo">Pomidoro</h2>
         </a>
@@ -27,7 +31,7 @@
                 <a href="#section3">
                     <h3 data-translate="PM"></h3>
                 </a>
-                <a href="Taimera Sadala/index_timer.html">
+                <a class="poga" href="Taimera%20Sadala/index_timer.html">
                     <h3 data-translate="PT"></h3>
                 </a>
             </div>
@@ -40,7 +44,7 @@
                     <a href="#section3">
                         <h3 data-translate="PM"></h3>
                     </a>
-                    <a href="Taimera Sadala/index_timer.html">
+                    <a class="poga" href="Taimera%20Sadala/index_timer.html">
                         <h3 data-translate="PT"></h3>
                     </a>
                     <div class="language">
@@ -68,25 +72,58 @@
     <section class="section2" id="section2">
         <h2 data-translate="KSIP"></h2>
         <p class="section__paragraph" data-translate="KSIP_P"></p>
+        <img class="heroimg"
+            src="https://t4.ftcdn.net/jpg/01/58/70/21/360_F_158702129_PgQ9tL0KwHIqhNBlt4l4xD67zo24iT6y.jpg">
     </section>
 
     <section class="section3" id="section3">
         <div class="column-right">
             <h2 data-translate="KSP"></h2>
             <p class="section__paragraph" data-translate="KSP_P"></p>
+            <img class="heroimg-left" src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2022-02/questioning.jpg?itok=W7w69Jg_" width="600px">
         </div>
     </section>
 
     <section class="section4" id="section4">
         <h2 data-translate="PT">PomoLaiks</h2>
         <p class="section__paragraph" data-translate="PT_P"></p>
-        <a class="poga" , href="Taimera Sadala/index_timer.html" data-translate="SKL"></a>
+        <a class="poga" href="Taimera%20Sadala/index_timer.html" data-translate="SKL"></a>
     </section>
 
     <section class="section5">
         <h1 class="review-header" data-translate="MPL"></h1>
         <div id="reviews" class="review-container"></div>
     </section>
+
+    <footer>
+        <div class="foot">
+            <div class="Sia">
+                <h4>© SIA “Sistēmas Izglītības”</h4>
+                <div class="Kontakti">
+                    <a id="myBtn" href="#"" data-translate="Knt"></a>
+                    <div id="KontaktiModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="text-knt">
+                                <p class="persona">Lauris Treimanis (CFO):</p>
+                                <p class="Loc">Atmodas Bulvāris 12-13</p>
+                                <p class="kontakti_P">+371 28 245 135</p>
+
+                                <p class="persona">Madars Urtāns (CGO)</p>
+                                <p class="Loc">Šķēdes Iela 21</p>
+                                <p class="kontakti_P">+371 12 345 135</p>
+
+                                <p class="persona">Ramins Pucko (CPO)</p>
+                                <p class="Loc">Šķēdes Iela 1</p>
+                                <p class="kontakti_P">+371 45 381 285</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
